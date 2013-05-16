@@ -1,0 +1,26 @@
+Windows
+1.  Download the desired .img file
+  a.	http://www.raspberrypi.org/downloads
+2.	Download Disk Imager from https://launchpad.net/win32-image-writer/+download
+3.	Insert your flash media
+4.	Note the drive letter assigned to your flash media
+5.	Start Disk Imager
+6.	Select the downloaded file and target device, and click "Write"
+7.	Remove your flash media when the operation is complete
+
+
+Ubuntu
+1.	Download the desired .img file
+  a.	http://www.raspberrypi.org/downloads
+2.	Install the usb-imagewriter package 
+  a.	If ImageWriter fails to launch, you may need to install python glade2 support. Install the python-glade2 package or Run sudo apt-get install python-glade2
+  b.	If your release does not include it and you are running 9.04 Jaunty Jackalope then run this command from the console:
+    i.	sudo apt-get install usb-imagewriter
+3.	Open Applications -> Accessories -> Image Writer
+  a.	KDE users will find this in Applications -> Utilities -> Image Writer
+  b.	from the command line, from the console:
+    i.	sudo ImageWriter
+  c.	On some usb-imagewriter versions (console command: ImageWriter) the application fails to write if the image path contains blank spaces, exiting with "Index Error: list index out of range". 
+4.	Insert your flash media
+5.	Select the downloaded file and flash device, and click "Write to Device"
+6.	Remove your device when the operation is complete
