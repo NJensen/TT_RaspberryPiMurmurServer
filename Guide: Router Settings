@@ -1,0 +1,29 @@
+To make you Mumble server accessible on the internet you have to setup port forwarding on your router. If you do not do that, you will have created a LAN Mumble Server.
+All Router settings here are for a TP-Link 1043ND
+
+Static IP
+Setting Static IP address on your Router may require you contact you internet provider and ask for one.
+The settings on the router
+1.  Logon your Router
+2.	Choose Networking from menu at the left side
+3.	Change: WAN Connection Type to Static IP
+  a.	Set the wanted IP Address
+  b.	Set Subnet Mask
+  c.	Set Default Gateway
+  d.	DO NOT CHANGE MTU Size
+  e.	Primary and Secondary DNS is Optional to set.
+4.	Click Save and continue to Forwarding
+
+Forwarding
+Forwarding on TP-Link 1043ND – Standard TP-Link Software
+1.	If you are not logged in then logon to your Router
+2.	Choose Forwarding from menu at the left side
+3.	Click Add New…
+  a.	Now enter Service Port and Internal Port from your Mumble Server
+    i.	Internal Port is the same as Service Port
+  b.	Enter Ip address on you Mumble server.
+  c.	Set Protocol to ALL
+  d.	Make sure status is: Enabled
+4.	Click save
+
+You can now access your server from the internet.
