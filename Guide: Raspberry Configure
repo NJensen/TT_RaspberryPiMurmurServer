@@ -1,0 +1,35 @@
+Raspi-config
+You need to do some configuring of the raspberry pi before installing Murmur on it.
+The is a Step-by-Step guide
+1.  Configure Keyboard layout so it fit your keyboard
+  a.	Wheezy Raspbain have a lot of preconfigured keyboard and layout
+  b.	Choose your keyboard and layout.
+  c.	At the end it will ask for X Server say no
+2.	Change Password
+  a.	Optional to change password, bur form a security point of view it is a good idea.
+    i.	If you choose to change enter your new password twice.
+3.	Set Timezone
+  a.	Select Europa and then Copenhagen
+4.	SSH enable
+  a.	Make sure that when you have selected SSH that you enable SSH Server
+5.	Last run an update
+
+If you forget or want to change in it later, you can do it by writing this command: sudo raspi-config
+
+6.	Now you have to set a static IP address on your Raspberry Pi.
+  a.	It can be done by setting static IP from your Raspberry Pi if you write:
+              Sudo nano /etc/network/interfaces
+1.	Change: iface eth0 inet dhcp to iface eth0 inet static
+2.	And add following under:
+              address 192.168.y.xxx
+              netmask 255.255.255.0
+              network 192.168.y.0
+              broadcast 192.168.1.255
+              gateway 192.168.y.1
+  b.  Another way you can do it from you Router by reserving an Ip address to your Raspberry Pi’s Mac.
+    i.	I have a TP-Link 1043ND for reserving an Ip address you do:
+1.	Login to your Router – Standard TP Link Software
+2.	Choose DHCP from menu to the left
+3.	Choose from submenu: Address Reservation
+4.	Click: Add New…
+5.	And enter Mac address and the following Ip address
