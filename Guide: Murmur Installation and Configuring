@@ -1,0 +1,27 @@
+This guide show how to install Mumble server on a Raspberry Pi, running Wheezy Raspbian.
+Installation
+1.  Make sure your Raspberry Pi is fully updated and upgraded.
+            sudo apt-get update
+            sudo apt-get upgrade
+2.	To install mumble server write Command:
+            sudo apt-get install mumble-server
+  a.	You now have a locale Mumble server. With no admin or users.
+  b.	People can logon your Mumble server and get a default user with their username, but on a Mumble server, you can create admin and users.
+  c.	Default port is 64738 
+3.	Configuration of Mumble Server write:
+            sudo dpkg-reconfigure mumble-server
+  a.	Set the server to start on server start up.
+  b.	Now allow Mumble server to use high priority CPU and Network  
+  c.	Creating a Super user/Admin
+    i.	It will now ask for a SuperUser Password
+      1.	Select your own password
+    ii.	Your SuperUser is now functional
+      1.	Login is Case sensitive
+4.  More Configuration type:
+            Sudo nano /etc/mumble-server.ini
+  a.	In here you can set Password for your server
+  b.	Set maximum number of connection
+    i.	I recommend a max of 20-25, depending on the bitrate you are running
+  c.	Change Port from Default 64738 to “Your choice”
+  d.	When you are done. Restart Mumble server.
+5.	You now have a Mumble Server up and Running.
