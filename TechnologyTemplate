@@ -1,0 +1,27 @@
+Technology Template
+
+Purpose
+The purpose of this TT is to give show and help other creating their own Murmur Server on a Raspberry Pi. The Murmur Server can be local or public.
+
+Requirement
+•  1 Raspberry Pi
+  o	Require root access
+•	Wheezy Raspbian OS
+•	SD Card
+  o	Minimum 2 GB
+•	Router
+  o	Require admin access 
+•	Internet cable  
+•	Internet access
+•	1 Laptop with Card Reader or 1 PC with a Card Reader
+  o	Running Ubuntu or Windows
+  o	Require Admin/Root
+
+Optional
+•	Router: TP-Link 1043ND
+
+How To
+1.	Get Raspberry Pi Running  – Follow Guide: Image to SD Card
+2.	Raspberry Configuration – Follow Guide: Raspberry Pi Configuration
+3.	Murmur installation – Follow Guide: Murmur Installation and Configuration
+4.	Local or public? – Follow Guide:Router Settings
